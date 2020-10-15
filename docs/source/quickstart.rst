@@ -7,7 +7,7 @@ Install the tools and the license
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You will have been sent the license and a link to download the tools. 
-For this example we will assume the tool package has been downloaded to ~/Downloads/symbiotic-20190924B-symbiotic.tar.gz
+For this example we will assume the tool package has been downloaded to ~/Downloads/symbiotic-latest.tar.gz
 and the license has been downloaded to ~/Downloads/symbiotic-eval.lic
 
 Make sure you change the text below to match your package and license names.
@@ -17,19 +17,19 @@ Typically you will install the tools like this:
 .. code-block:: text
 
     cd /opt
-    sudo tar -xzf ~/Downloads/symbiotic-20190924B-symbiotic.tar.gz
+    sudo tar -xzf ~/Downloads/symbiotic-latest.tar.gz
 
 Then include this new directory in your PATH environment variable:
 
 .. code-block:: text
 
-    export PATH=/opt/symbiotic-20190924B-symbiotic/bin:$PATH
+    export PATH=/opt/symbiotic-latest/bin:$PATH
 
 If you want to make this change permanent, add it to your .bashrc file:
 
 .. code-block:: text
 
-    echo 'export PATH=/opt/symbiotic-20190924B-symbiotic/bin:$PATH' >> ~/.bashrc
+    echo 'export PATH=/opt/symbiotic-latest/bin:$PATH' >> ~/.bashrc
 
 Save the license file to a safe place:
 
@@ -49,6 +49,12 @@ If you want to make this permament, add it to your .bashrc file:
 
     echo 'export SYMBIOTIC_LICENSE="$HOME/symbiotic-eval.lic"' >> ~/.bashrc
 
+Finally, you need to run ``setup.sh``:
+
+.. code-block:: text
+
+    /opt/symbiotic-latest/bin/setup.sh
+
 Check the tools are installed correctly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -58,7 +64,7 @@ run this command:
 
     which yosys
 
-This should return the path where yosys is installed in /opt/symbiotic
+This should return the path where yosys is installed in /opt/symbiotic-latest
 
 .. code-block:: text
 
@@ -72,7 +78,7 @@ This will start yosys in shell mode and you should see that your license is veri
 
 If not, please contact us to help you resolve the issue.
 
-Then press ctrl+D or type 'exit' to exit yosys.
+Then press ctrl+D or type ``exit`` to exit yosys.
 
 Formally Verify a simple Verilog example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,7 +93,7 @@ Run this command to Formally Verify the counter example:
 
     sby -f counter.sby
 
-The `-f` switch removes previous test results. You will see some log output from the tool and the last line shows the result: ``FAIL``.
+The ``-f`` switch removes previous test results. You will see some log output from the tool and the last line shows the result: ``FAIL``.
 When the tools find a way to break an assertion they generate a trace file. 
 
 * If the test failed bounded model checking (BMC), the trace will be written to counter/engine_0/trace.vcd. 
@@ -113,7 +119,7 @@ Run this command to Formally Verify the counter example:
 
     sby -f counter_vhd.sby
 
-The `-f` switch removes previous test results. You will see some log output from the tool and the last line shows the result: FAIL.
+The ``-f`` switch removes previous test results. You will see some log output from the tool and the last line shows the result: FAIL.
 When the tools find a way to break an assertion they generate a trace file. 
 
 * If the test failed bounded model checking (BMC), the trace will be written to counter_vhd/engine_0/trace.vcd. 

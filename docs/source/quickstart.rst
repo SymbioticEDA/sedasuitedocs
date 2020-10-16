@@ -1,4 +1,4 @@
-Getting started with Formal Verification
+Getting started with Symbiotic EDA Suite
 ----------------------------------------
 
 This short guide aims to get you started with the `Symbiotic EDA <https://www.symbioticeda.com/>`_ Formal Verification tools.

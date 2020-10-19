@@ -53,7 +53,7 @@ Finally, you need to run ``setup.sh``:
 
 .. code-block:: text
 
-    /opt/symbiotic-latest/bin/setup.sh
+    /opt/symbiotic-latest/setup.sh
 
 Check the tools are installed correctly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

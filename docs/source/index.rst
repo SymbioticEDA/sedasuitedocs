@@ -7,8 +7,8 @@ Symbiotic EDA Suite Documentation
 
    quickstart.rst
    aws.rst
-   symbiyosys.rst
+   SymbiYosys/docs/source/index.rst
    yosys.rst
-   mcy.rst
+   mcy/docs/source/index.rst
    training.rst
    videos.rst

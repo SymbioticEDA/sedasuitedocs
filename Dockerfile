@@ -8,8 +8,10 @@ RUN set -e -x ;\
         make \
         git \
         python3 \
-        latexmk python3-sphinx texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended; \
+        latexmk python3-pip texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended; \
     apt -y autoremove ;\
     rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install -U sphinx
 
 WORKDIR /work

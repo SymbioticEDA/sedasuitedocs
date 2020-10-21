@@ -6,6 +6,7 @@ RUN set -e -x ;\
     apt -y update ;\
     apt -y install \
         make \
+        git \
         python3 \
         latexmk python3-sphinx texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended; \
     apt -y autoremove ;\

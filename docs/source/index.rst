@@ -6,9 +6,9 @@ Symbiotic EDA Suite Documentation
    :maxdepth: 3
 
    quickstart.rst
-   aws.rst
-   SymbiYosys/docs/source/index.rst
+   symbiyosys.rst
    yosys.rst
-   mcy/docs/source/index.rst
+   mcy.rst
    training.rst
    videos.rst
+   aws.rst

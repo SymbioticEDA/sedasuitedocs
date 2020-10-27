@@ -3,8 +3,8 @@ Training
 
 Get in touch with us at `Symbiotic EDA <mailto:matt@symbioticeda.com>`_ to arrange training in any of our tools.
 
-Introduction to Formal Verification Course
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Introductory Course
+~~~~~~~~~~~~~~~~~~~
 
 * 1 day of course material can be split over multiple sessions.
 * Suitable for beginners who want to get started using the tools.
